@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@font-face {
+  font-family: "Blender-Pro";
+  src: url("../assets/font/BlenderPro-Bold.ttf");
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body * {
+  font-family: "Blender-Pro";
+}
+
+.header-bg {
+  background-image: url("../assets/img/Screenshot_5.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.main-bg {
+  background-image: url("../assets/img/annieversary-final-1 1.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.getstarted-bg-desktop {
+  background-image: url("../assets/img/get-started-desktop.webp");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.getstarted-bg-mobile {
+  background-image: url("../assets/img/get-started-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.footer-bg {
+  background-image: url("../assets/img/footer-bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
